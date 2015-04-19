@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">吃什么</string>
+    <string name="drawer_fragment_icon">drawer_fragment_icon</string>
+    <string name="recommend">推荐</string>
+    <string name="social">吃货圈</string>
+    <string name="setting">设置</string>
+</resources>

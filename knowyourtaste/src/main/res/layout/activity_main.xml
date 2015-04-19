@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainactivity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/activity_main_fragments_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#3F51B5">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/activity_main_drawer_userImage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/luffy"/>
+
+            <TextView
+                android:id="@+id/activity_main_drawer_userNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/activity_main_drawer_userImage"
+                android:layout_toEndOf="@id/activity_main_drawer_userImage"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:text="XXX"/>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/activity_main_drawer_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"/>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
