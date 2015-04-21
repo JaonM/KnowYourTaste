@@ -16,6 +16,7 @@ import com.candy.knowyourtaste.mainactivity.fragments.SocialFragment;
 
 /**
  * Created by maqiang on 2015/4/18.
+ * Ö÷activity
  */
 public class MainActivity extends Activity {
 

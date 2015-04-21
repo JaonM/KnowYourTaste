@@ -35,7 +35,7 @@ public class DrawerListAdapter extends BaseAdapter {
     @Override
     public View getView(int position,View convertView,ViewGroup parent) {
         if(convertView==null) {
-            convertView= LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_main_drawer_list_layout,parent,false);
+            convertView= LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_activity_main_drawer_list_layout,parent,false);
         }
         TextView mTextView=(TextView)convertView.findViewById(R.id.activity_main_drawer_listView_fragment_text);
         mTextView.setText(titles[position]);
